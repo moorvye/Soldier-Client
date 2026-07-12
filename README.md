@@ -35,6 +35,7 @@ This project is inspired by the excellent **v2rayNG** project and extends it wit
 - ✅ WebSocket
 - ✅ HTTP Upgrade
 - ✅ SplitHTTP
+- ✅ Sni Spoof 
 
 ---
 
@@ -145,6 +146,7 @@ Your support motivates future development.
 - ✅ WebSocket
 - ✅ HTTP Upgrade
 - ✅ SplitHTTP
+- ✅ Sni Spoof | اسپوف
 
 ---
 
