@@ -1,32 +1,132 @@
-# Soldier
+# Soldier Client
 
-A V2Ray client for Android, support [Xray core](https://github.com/XTLS/Xray-core) and [v2fly core](https://github.com/v2fly/v2ray-core)
+**English | [فارسی](#فارسی)**
 
-[![API](https://img.shields.io/badge/API-24%2B-yellow.svg?style=flat)](https://developer.android.com/about/versions/lollipop)
-[![Kotlin Version](https://img.shields.io/badge/Kotlin-2.4.0-blue.svg)](https://kotlinlang.org)
-[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/2dust/v2rayNG)](https://github.com/2dust/v2rayNG/commits/master)
-[![CodeFactor](https://www.codefactor.io/repository/github/2dust/v2rayng/badge)](https://www.codefactor.io/repository/github/2dust/v2rayng)
-[![GitHub Releases](https://img.shields.io/github/downloads/2dust/v2rayNG/latest/total?logo=github)](https://github.com/2dust/v2rayNG/releases)
-[![Chat on Telegram](https://img.shields.io/badge/Chat%20on-Telegram-brightgreen.svg)](https://t.me/v2rayn)
+A fast, lightweight Android VPN / proxy client based on **v2rayNG**, powered by **Xray-core**.
 
-### Telegram Channel
-[github_2dust](https://t.me/SoldierClient)
+Soldier adds SNI/CDN tools, scanners, and settings that help TLS configs work better under heavy network filtering.
 
-### Usage
+> Inspired by [2dust/v2rayNG](https://github.com/2dust/v2rayNG).  
+> Thanks to the original v2rayNG and Xray-core developers.
 
-#### Geoip and Geosite
-- geoip.dat and geosite.dat files are in `Android/data/com.v2ray.ang/files/assets` (path may differ on some Android device)
-- download feature will get enhanced version in this [repo](https://github.com/Loyalsoldier/v2ray-rules-dat) (Note it need a working proxy)
-- latest official [domain list](https://github.com/Loyalsoldier/v2ray-rules-dat) and [ip list](https://github.com/Loyalsoldier/geoip) can be imported manually
-- possible to use third party dat file in the same folder, like [h2y](https://guide.v2fly.org/routing/sitedata.html#%E5%A4%96%E7%BD%AE%E7%9A%84%E5%9F%9F%E5%90%8D%E6%96%87%E4%BB%B6)
+---
 
-### More in our [wiki](https://github.com/2dust/v2rayNG/wiki)
+## Features
 
-### Development guide
+### Core
+- VLESS / VMess / Trojan / Shadowsocks / WireGuard / Hysteria2
+- Reality, TLS, gRPC, WebSocket, HTTP Upgrade, SplitHTTP, H2
+- Subscriptions, routing rules, IPv6, per-app proxy
+- Connection duration timer
 
-Android project under V2rayNG folder can be compiled directly in Android Studio, or using Gradle wrapper. But the v2ray core inside the aar is (probably) outdated.  
-The aar can be compiled from the Golang project [AndroidLibV2rayLite](https://github.com/2dust/AndroidLibV2rayLite) or [AndroidLibXrayLite](https://github.com/2dust/AndroidLibXrayLite).
-For a quick start, read guide for [Go Mobile](https://github.com/golang/go/wiki/Mobile) and [Makefiles for Go Developers](https://tutorialedge.net/golang/makefiles-for-go-developers/)
+### Menu tools
 
-v2rayNG can run on Android Emulators. For WSA, VPN permission need to be granted via
-`appops set [package name] ACTIVATE_VPN allow`
+| Tool | Description |
+|------|-------------|
+| **SNI Spoof** | Enter IP, Port and SNI for special SNI Spoof configs (usually `127.0.0.1:40443`). Applied to those local spoof profiles. |
+| **Spoof Scanner** | Provide an SNI Spoof config plus IP ranges and ports. Finds matching IPs and can export subscription links. |
+| **Soldier Scanner** | Scan custom IP ranges and show healthy / whitelist-friendly IPs. |
+| **IP Lookup** | Enter a domain and list the IPs behind it. |
+
+### Settings
+
+| Option | Description |
+|--------|-------------|
+| **CDN IP (TLS)** | Address/port override for **TLS** configs (VLESS, VMess, SS, Trojan, H2, …). |
+| **CDN Spoof** | Use a CDN domain for routing when filtering is strict. |
+| **DNS Resolver List** | Custom DNS resolvers for all configs. |
+
+---
+
+## Telegram
+
+**https://t.me/SoldierClient**
+
+---
+
+## Downloads
+
+[Releases](https://github.com/moorvye/Soldier-Client/releases) — APK files
+
+---
+
+## Build
+
+Open the project in Android Studio or use Gradle Wrapper.  
+Do not commit keystores or `local.properties`.
+
+---
+
+## License
+
+GPL-3.0 (compatible with upstream).  
+Independent community project — not an official 2dust product.
+
+---
+
+# فارسی
+
+کلاینت اندروید سبک و سریع مبتنی بر **v2rayNG** با هسته **Xray**.
+
+Soldier ابزارهای SNI/CDN، اسکنر و تنظیمات اضافه دارد تا کانفیگ‌های TLS در محدودیت‌های شدید اینترنت پایدارتر کار کنند.
+
+> الهام‌گرفته از [2dust/v2rayNG](https://github.com/2dust/v2rayNG)  
+> با تشکر از توسعه‌دهندگان اصلی v2rayNG و Xray-core
+
+---
+
+## قابلیت‌ها
+
+### هسته
+- VLESS / VMess / Trojan / Shadowsocks / WireGuard / Hysteria2
+- Reality، TLS، gRPC، WebSocket، HTTP Upgrade، SplitHTTP، H2
+- سابسکریپشن، مسیریابی، IPv6، پروکسی بر اساس اپ
+- تایمر مدت زمان اتصال
+
+### ابزارهای منو
+
+| ابزار | توضیح |
+|--------|--------|
+| **SNI Spoof** | آی‌پی، پورت و SNI را وارد می‌کنید؛ روی کانفیگ‌های مخصوص SNI Spoof (معمولاً `127.0.0.1` و پورت `40443`) اعمال می‌شود. |
+| **Spoof Scanner** | یک کانفیگ SNI Spoof به‌همراه IP Range و پورت‌ها؛ اسکن می‌کند و IPهای مناسب را به‌صورت ساب‌لینک قابل‌استفاده درمی‌آورد. |
+| **Soldier Scanner** | رنج IP دلخواه را اسکن می‌کند و IPهای سالم / وایت‌لیست را نشان می‌دهد. |
+| **IP Lookup** | دامنه یا آدرس سایت را می‌گیرید و IPهای پشت آن را نمایش می‌دهد. |
+
+### تنظیمات
+
+| گزینه | توضیح |
+|--------|--------|
+| **CDN IP (TLS)** | برای کانفیگ‌های **TLS** (VLESS، VMess، SS، Trojan، H2 و …)؛ آدرس/پورت را برای عملکرد بهتر در محدودیت‌ها تنظیم می‌کند. |
+| **CDN Spoof** | استفاده از دامنه CDN برای مسیریابی در فیلترینگ شدید. |
+| **DNS Resolver List** | لیست DNS سفارشی برای همه کانفیگ‌ها. |
+
+این گزینه‌ها می‌توانند پایداری کانفیگ‌های TLS را بهتر کنند و برای دور زدن محدودیت‌های شبکه مفید باشند.
+
+---
+
+## تلگرام
+
+کانال رسمی برای آپدیت و آموزش:
+
+**https://t.me/SoldierClient**
+
+
+## دانلود
+
+بخش [Releases](https://github.com/moorvye/Soldier-Client/releases) — فایل‌های APK
+
+
+## ساخت (Build)
+
+پروژه را در Android Studio باز کنید یا با Gradle Wrapper بسازید.  
+فایل keystore و `local.properties` را commit نکنید.
+
+
+## لایسنس
+
+GPL-3.0 (هم‌راستا با پروژه اصلی).  
+پروژه مستقل جامعه — محصول رسمی 2dust نیست.
+
+## سلب مسئولیت
+
+فقط مطابق قوانین محل زندگی و شرایط ارائه‌دهنده اینترنت استفاده کنید. مسئولیت سوءاستفاده با کاربر است.
