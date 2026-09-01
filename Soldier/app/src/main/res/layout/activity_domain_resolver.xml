@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#121212">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="40dp"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Domain to IP"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"/>
+
+        <EditText
+            android:id="@+id/et_domain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter domain (example.com)"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#888888"/>
+
+        <Button
+            android:id="@+id/btn_resolve"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Resolve"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="12dp"
+            android:background="#1E1E1E"
+            android:textColor="#00FF66"
+            android:textSize="15sp"
+            android:textIsSelectable="true"/>
+
+    </LinearLayout>
+
+</ScrollView>
