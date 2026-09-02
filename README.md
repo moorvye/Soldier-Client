@@ -17,7 +17,7 @@ Soldier adds SNI/CDN tools, scanners, and settings that help TLS configs work be
 - VLESS / VMess / Trojan / Shadowsocks / WireGuard / Hysteria2
 - Reality, TLS, gRPC, WebSocket, HTTP Upgrade, SplitHTTP, H2
 - Subscriptions, routing rules, IPv6, per-app proxy
-- Connection duration timer
+
 
 ### Menu tools
 
@@ -81,7 +81,7 @@ Soldier ابزارهای SNI/CDN، اسکنر و تنظیمات اضافه دا�
 - VLESS / VMess / Trojan / Shadowsocks / WireGuard / Hysteria2
 - Reality، TLS، gRPC، WebSocket، HTTP Upgrade، SplitHTTP، H2
 - سابسکریپشن، مسیریابی، IPv6، پروکسی بر اساس اپ
-- تایمر مدت زمان اتصال
+
 
 ### ابزارهای منو
 
