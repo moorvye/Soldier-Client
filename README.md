@@ -56,6 +56,13 @@ https://t.me/SoldierClient
 Open the project in Android Studio or use the Gradle Wrapper.  
 Do not commit keystores or `local.properties`.
 
+### Support the project
+If Soldier helps you, you can support development with **TON**:
+
+`UQBMVlH3ckVHZR4kr81UWHhO4tjFDnaWknuY4pGaqojxhjDB`
+
+Thank you for any support ❤️
+
 ### License
 GPL-3.0 (compatible with upstream)
 
@@ -117,6 +124,13 @@ https://t.me/SoldierClient
 ### ساخت (Build)
 پروژه را در Android Studio باز کنید یا با Gradle Wrapper بسازید.  
 فایل keystore و `local.properties` را commit نکنید.
+
+### حمایت مالی
+اگر Soldier برایتان مفید بوده، می‌توانید از توسعه پروژه با **TON** حمایت کنید:
+
+`UQBMVlH3ckVHZR4kr81UWHhO4tjFDnaWknuY4pGaqojxhjDB`
+
+از حمایت شما سپاسگزاریم ❤️
 
 ### لایسنس
 GPL-3.0 (هم‌راستا با پروژه اصلی)
